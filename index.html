@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Survey</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <!-- Form -->
+        <form action="" id="survey-form">
+            <!--  text -->
+            <div class="form-iteam">
+                <label id="name-label" class="title" for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+            <!--  email -->
+            <div class="form-iteam">
+                <label id="email-label" class="title" for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+            <!--  number -->
+            <div class="form-iteam">
+                <label id="number-label" class="title" for="number">Age</label>
+                <input name="age"  min="10" max="99" id="number" type="number" placeholder="Enter your age" required>
+            </div>
+            <!-- drop-down  -->
+            <div class="form-iteam">
+                <p class="title">Question 1: ...?</p>
+                <select name="" id="dropdown" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+
+                </select>
+            </div>
+            <!-- radio -->
+            <div class="form-iteam">
+                <p  class="title" >Question 2: ...?</p>
+                <label>
+                    <input name="user-recommend" value="t" type="radio" class="input-radio" checked /><span>True</span> 
+                </label>
+                <label>
+                    <input name="user-recommend" value="f" type="radio" class="input-radio"/><span>False</span> 
+                </label>
+            </div>
+            <!-- check-box -->
+            <div class="form-iteam">
+                <p class="title">Question 3:...?</p>
+                <label for="cb-1">
+                    <input type="checkbox" class="cb" name="cb" id="cb-1" value="java"><span>Java</span>
+                </label>
+                <label for="cb-2">
+                    <input type="checkbox" class="cb" name="cb" id="cb-2" value=".net"><span>.net</span>
+                </label>
+                <lab1l for="cb-3">
+                    <input type="checkbox" class="cb" name="cb" id="cb-3" value="c/c++"><span>c/c++</span>
+                </lab1l>
+                <label for="cb-4">
+                    <input type="checkbox" class="cb" name="cb" id="cb-4" value="javascript"><span>c/c++</span>
+                </label>
+
+            </div>
+            <!-- Text area -->
+            <div class="form-iteam">
+                <p class="title">Any comments or suggestions?</p>
+              <textarea name="cmt" id="comment" cols="3" rows="5"></textarea>
+            </div>
+            <!-- submit -->
+            <div class="btn-submit">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+
+</html>
